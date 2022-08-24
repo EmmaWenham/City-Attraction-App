@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -r dotenv/config index.js",
+    "start": "index.js",
     "devStart": "nodemon -r dotenv/config index.js",
     "test": "mocha tests/**/*.js --exit --recursive --timeout 60000 --file ./tests/test-setup.js"
   },
@@ -26,8 +26,7 @@
     "heroku": "^7.62.0",
     "mysql": "^2.18.1",
     "mysql-promise": "^5.0.0",
-    "dotenv": "^16.0.1",
-    "nodemon": "^2.0.19"
+    "dotenv": "^16.0.1"
   },
   "devDependencies": {
     "axios": "^0.27.2",
