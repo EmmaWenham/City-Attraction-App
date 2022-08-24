@@ -68,7 +68,7 @@ app.get("/pathway", async (req, res) => {
   return res.status(200).json(results);
 });
 
-app.listen(process.env.PORT || port, () => {
+app.listen(process.env.PORT, () => {
   console.log("running on port 3001");
 });
 
