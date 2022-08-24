@@ -5,6 +5,7 @@ const app = express();
 const db = require("mysql-promise")();
 const path = require('path');
 const envFile = './.env';
+const port = 3001;
 require('dotenv').config({
   path: envFile,
 });
@@ -67,7 +68,7 @@ app.get("/pathway", async (req, res) => {
   return res.status(200).json(results);
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || port, () => {
   console.log("running on port 3001");
 });
 
